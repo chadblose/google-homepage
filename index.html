@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<style>
+    html {
+        font-family:sans-serif;
+    }
+
+    .viewport {
+        display:flex;
+        min-height: 100vh;
+        flex-direction: column;
+        margin:0px;
+    }
+
+    .main-content {
+        flex:1;
+        justify-content: center;
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-style {
+        display:flex;
+        flex-direction:row;
+        padding:0.5em;
+    }
+
+    .header-style, div {
+        padding:0.5em;
+    }
+
+    .search-border {
+        border: 1px;
+        border-color:lightgray;
+    }
+
+    .search-input {
+        width:400px;
+        padding:10px;
+        border:1px;
+        border-color:black;
+        border-radius:5px;
+        box-shadow:0 0 10px 4px rgba(0,0,0,0.20)
+    }
+
+</style>
+
+<html>
+    <title>Google Search</title>
+    <head></head>
+    <body class="viewport">
+        <header class="header-style">
+            <div>About</div>
+            <div>Store</div>
+        </header>
+        <main class="main-content">
+            <div><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"></div>
+            <div>
+                <form>
+                <div><input type="text" class="search-input"></div>
+                <div><input type="button" value="Google Search"></div>
+                </form>
+            </div>
+        </main>
+        <footer id="header-style">
+            <div>Settings</div>
+        </footer>
+    </body>
+</html>
